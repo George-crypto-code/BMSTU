@@ -12,7 +12,6 @@ int main()
         std::cout << "Wrong input! Try again!" << std::endl;
         std::cin >> a;
     }
-
     double y = std::sqrt((1.0 - std::sin(M_PI / 2.0 - a)) / 2.0)
     + std::sqrt((1.0 + std::cos(2.0 * M_PI - a)) / 2.0);
 
