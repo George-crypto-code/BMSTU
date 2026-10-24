@@ -50,8 +50,7 @@ void print(std::vector<std::vector<int>> matrix)
 int sumDiagonal(std::vector<std::vector<int>> matrix)
 {
     int sum = 0;
-    for (int i = 0; i < matrix.size(); i++)
-        sum += matrix[i][i];
+    for (int i = 0; i < matrix.size(); i++) sum += matrix[i][i];
     return sum;
 }
 

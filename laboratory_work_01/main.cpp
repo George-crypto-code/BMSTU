@@ -2,6 +2,13 @@
 #include <cmath>
 
 
+double f(double x)
+{
+    return std::sqrt((1.0 - std::sin(M_PI / 2.0 - x)) / 2.0)
+    + std::sqrt((1.0 + std::cos(2.0 * M_PI - x)) / 2.0);
+}
+
+
 int main() 
 {
     double a;
@@ -14,9 +21,7 @@ int main()
         std::cin >> a;
     }
 
-    double y = std::sqrt((1.0 - std::sin(M_PI / 2.0 - a)) / 2.0)
-    + std::sqrt((1.0 + std::cos(2.0 * M_PI - a)) / 2.0);
-
+    double y = f(a);
     std::cout << "y = " << y << std::endl;
 
     return 0;
